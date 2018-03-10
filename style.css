@@ -65,8 +65,8 @@ body {
 }
 
 .icons img {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -74,6 +74,12 @@ body {
 
 .left {
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .left {
+        display: none;
+    }
 }
 
 .collage-row {
