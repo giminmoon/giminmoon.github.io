@@ -38,7 +38,7 @@ body {
 .name {
     margin-top: 6vw;
     font-family: 'Arvo', serif;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -118,6 +118,11 @@ body {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+}
+@media (max-height: 700px) {
+    .affix{
+        position: static;
     }
 }
 
