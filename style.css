@@ -1,51 +1,105 @@
-.split {
-    height: 100%;
-    width: 50%;
+/*General*/
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0px;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.col-lg-6 {
+    width: 100%;
+    padding: 0;
+}
+
+.affix {
     position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    height: 100%;
 }
 
-.left {
-    left: 0;
-    background-color: #111;
-}
 
-.right {
-    right: 0;
-}
+/*Right side*/
+
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+    margin: 0vw 5vw;
     text-align: center;
 }
-.row {
+
+.name {
+    margin-top: 6vw;
+    font-family: 'Arvo', serif;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.about {
+    margin-top: 5vw;
+    text-align: justify;
+}
+
+.roles {
+    font-size: 20px;
+}
+
+.contact {
+    margin-top: 7vw;
+}
+
+.contact h3 {
+    font-size: 20px;
+}
+
+.icons a {
+    margin-top: 5vw;
+    margin-right: 0.5vw;
+}
+
+.icons img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+
+/*Left side*/
+
+.left {
+    text-align: center;
+}
+
+.collage-row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    text-align: center;
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+.collage-col {
     -ms-flex: 20%; /* IE10 */
     flex: 20%;
-    max-width: 25%;
+    max-width: 33.3333%;
     padding: 0 3px;
 }
 
-.column img {
+.collage-col img {
     margin-top: 8px;
     vertical-align: middle;
 }
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .column {
+    .collage-col {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
@@ -54,43 +108,20 @@
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-    .column {
+    .collage-col {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
 }
-.shift_right {
-    transform: translate(10%, -2%);
 
-}
 .image_title{
    
     text-align: center;
 }
 
 
-h1{
-    font-family: 'Josefin Slab', serif;
-    font-style: Semi-Bold Italic;
-    font-size: 65px;
-}
-h2{
-    font-family: 'Josefin Slab', serif;
-    font-size: 35px;
-}
-.roles{
-    font-family: 'Josefin Slab', serif;
-    font-weight: 'Light Italic';
-    font-size: 19px;
-    transform: translate(0%, -180%);
-}
-.bio{
-    font-family: 'Josefin Slab', serif;
-    
-    font-size: 20px;
-    /*transform: translate(%, 0%);*/
-}
+
 
 
 
